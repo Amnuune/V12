@@ -1,0 +1,23 @@
+[package]
+name = "v12-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "v12"
+path = "src/main.rs"
+
+[dependencies]
+v12-runtime   = { path = "../v12-runtime" }
+v12-frontend  = { path = "../v12-frontend" }
+v12-lifter    = { path = "../v12-lifter" }
+v12-emitter   = { path = "../v12-emitter" }
+tokio.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+env_logger.workspace = true
+log.workspace = true
+rayon.workspace = true
+yaml-rust.workspace = true
+wasmprinter = "0.201"
+wasmparser = "0.121"

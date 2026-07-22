@@ -1,0 +1,11 @@
+[package]
+name = "v12-ir"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+thiserror.workspace = true
+indexmap.workspace = true
+rustc-hash.workspace = true
+id-arena.workspace = true

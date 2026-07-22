@@ -1,0 +1,21 @@
+[package]
+name = "v12-benches"
+version.workspace = true
+edition.workspace = true
+publish = false
+
+[dependencies]
+v12-frontend = { path = "../crates/v12-frontend" }
+v12-ir       = { path = "../crates/v12-ir" }
+v12-lifter   = { path = "../crates/v12-lifter" }
+v12-emitter  = { path = "../crates/v12-emitter" }
+v12-runtime  = { path = "../crates/v12-runtime" }
+anyhow.workspace = true
+
+[dev-dependencies]
+criterion.workspace = true
+walkdir = "2"
+
+[[bench]]
+name = "scripts"
+harness = false

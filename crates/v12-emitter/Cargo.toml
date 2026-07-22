@@ -1,0 +1,13 @@
+[package]
+name = "v12-emitter"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+v12-ir        = { path = "../v12-ir" }
+id-arena.workspace = true
+wasm-encoder.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+indexmap.workspace = true
+log.workspace = true

@@ -1,0 +1,5 @@
+# Tell GitHub Linguist that benches and test262 are vendored testing suites,
+# so they should not count towards the repository's language statistics.
+benches/**/*.js linguist-vendored
+test262/**/*.js linguist-vendored
+*.wat linguist-vendored

@@ -1,0 +1,16 @@
+[package]
+name = "v12-lifter"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+v12-frontend = { path = "../v12-frontend" }
+v12-ir       = { path = "../v12-ir" }
+oxc_ast.workspace = true
+oxc_span.workspace = true
+oxc_allocator.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+indexmap.workspace = true
+rustc-hash.workspace = true
+log.workspace = true

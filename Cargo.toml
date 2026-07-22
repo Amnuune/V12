@@ -1,0 +1,47 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/v12-frontend",
+    "crates/v12-ir",
+    "crates/v12-lifter",
+    "crates/v12-emitter",
+    "crates/v12-runtime",
+    "crates/v12-cli",
+    "benches",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["V12 Engine Team"]
+license = "MIT"
+
+[workspace.dependencies]
+# Parsing
+oxc_allocator  = "0.69"
+oxc_parser     = "0.69"
+oxc_ast        = "0.69"
+oxc_span       = "0.69"
+oxc_semantic   = "0.69"
+
+# Wasm encoding
+wasm-encoder   = "0.229"
+
+# Wasm runtime
+wasmtime       = { version = "30", features = ["gc", "async"] }
+
+# Async
+tokio          = { version = "1", features = ["full"] }
+
+# Utilities
+anyhow         = "1"
+thiserror      = "2"
+indexmap       = "2"
+rustc-hash     = "2"
+id-arena       = "2"
+log            = "0.4"
+env_logger     = "0.11"
+clap           = { version = "4", features = ["derive"] }
+rayon          = "1"
+yaml-rust      = "0.4"
+criterion      = "0.5"
